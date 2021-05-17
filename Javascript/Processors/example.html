@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Processors Example</title>
+    <script src="processors.js"></script>
+</head>
+
+<body>
+    <script>
+
+    function ConcreteProcessor() {
+
+        this.initialize = function(c) {
+        }
+
+        this.tick = function(timeElapsed) {
+            alert('Tick!');
+        }
+
+    }
+
+    var c = new Processors.ProcessorContext();
+    c.pushProcessor(new Processors.TickProcessor(2000));
+    c.pushProcessor(new ConcreteProcessor());
+    
+    var d = new Processors
+    </script>
+</body>
+
+</html>

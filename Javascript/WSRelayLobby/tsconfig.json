@@ -1,0 +1,28 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "module": "system",
+        "removeComments": false,
+        "sourceRoot": "./src/",
+        "rootDir": "./src/",
+        "outDir": "./bin/",
+        "outFile": "./bin/wsRelayLobby.js",
+        "noEmitOnError": true,
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        {
+            "prepend": true,
+            "path": "../WSRelayClient/tsconfig.json"
+        }
+    ]
+}

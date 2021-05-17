@@ -1,0 +1,5 @@
+{
+    "search.exclude": {
+        "socialPoker.js": true
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "module": "system",
+        "removeComments": false,
+        "outFile": "socialPoker.js",
+        "noEmitOnError": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        {
+            "prepend": true,
+            "path": "../../../Javascript/Processors/tsconfig.json"
+        },
+        {
+            "prepend": true,
+            "path": "../../../Javascript/Query/tsconfig.json"
+        },
+        {
+            "prepend": true,
+            "path": "../../../Javascript/Http/tsconfig.json"
+        },
+        {
+            "prepend": true,
+            "path": "../../../Javascript/ImageMaps/tsconfig.json"
+        },
+        {
+            "prepend": true,
+            "path": "../../../Javascript/Elements/tsconfig.json"
+        },
+        {
+            "prepend": true,
+            "path": "../../../Javascript/WSRelayClient/tsconfig.json"
+        },
+        {
+            "prepend": true,
+            "path": "../../../Javascript/Loader/tsconfig.json"
+        }
+    ]
+}

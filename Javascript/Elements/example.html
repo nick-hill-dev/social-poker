@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Elements Example</title>
+    <script src="bin/elements.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        
+    </div>
+    <script>
+        window.onload = function () {
+            var div = $asDiv('root');
+            var button = $new().button().text('Hello World!').onClick(function () { alert('Clicked button!'); }).parent(div);
+        }
+    </script>
+</body>
+
+</html>

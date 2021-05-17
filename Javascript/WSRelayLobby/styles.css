@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 1em;
+    background-color: #efefef;
+}
+
+body, button, input {
+    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+input {
+    border: 1pt solid black;
+}
+
+button {
+    font-weight: bold;
+    background-color: #ddd;
+    color: #222;
+    border: 2pt solid #222;
+    border-radius: 3pt;
+    padding: 4pt;
+}
+
+.wsRelayLobby-realms, .wsRelayLobby-users {
+    border: 1pt solid black;
+    margin-top: 12pt;
+    margin-bottom: 12pt;
+    display: table;
+}
+
+.wsRelayLobby-realmName, .wsRelayLobby-userName {
+    font-weight: bold;
+}
+
+.wsRelayLobby-realm, .wsRelayLobby-user {
+    background: 1pt solid #000;
+    padding: 4pt;
+    border-radius: 4pt;
+}

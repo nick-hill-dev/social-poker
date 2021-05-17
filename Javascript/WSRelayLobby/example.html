@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>WSRelayLobby Example</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="lib/Javascript.WSRelayClient.1.1/bin/wsRelayClient.js"></script>
+    <script src="bin/wsRelayLobby.js"></script>
+    <script>
+        function start() {
+            var div = document.getElementById('lobbyDiv');
+            var task = new WSRelayLobby.RealmSelectionTask(div);
+            task.fullControl = true;
+            task.startMode = WSRelayLobby.RealmStartMode.whenHostConfirms;
+            task.realmVisibility = WSRelayLobby.RealmVisibility.always;
+            task.onCancelled = function () {
+                alert('Cancelled.');
+            };
+            task.onCompleted = function (realm) {
+                console.dir(realm);
+                return new WSRelayLobby.LoggingRealmChannelHandler();
+            };
+            task.start();
+        }
+    </script>
+</head>
+<body onload="start();">
+    <div id="lobbyDiv">
+    </div>
+</body>
+</html>

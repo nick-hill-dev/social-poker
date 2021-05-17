@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WSRelay Test</title>
+</head>
+<body>
+    <script>
+        var client = new WebSocket('wss://localhost:22002', 'relay');
+        client.onopen = function () {
+            client.send('^19');
+        };
+        client.onerror = function () {
+            alert('WebSocket error.');
+        };
+        client.onmessage = function (ev) {
+            alert('Message: ' + ev.data);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+enum CardVisibility {
+    private,
+    public
+}

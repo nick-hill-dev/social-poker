@@ -1,0 +1,14 @@
+.hg
+bin
+obj
+*.user
+packages
+.hgignore
+.hgtags
+Application Server/WSRelay/(mono)/Scripts/wsrelayserver.sh
+*.orig
+socialPoker.js
+S-Workspace.xml
+S-Project.xml
+Project.xml
+Built

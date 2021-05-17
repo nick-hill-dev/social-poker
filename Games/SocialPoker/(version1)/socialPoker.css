@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, button, input {
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+    background: #fff;
+}
+
+input {
+    border: 1pt solid black;
+}
+
+.status {
+    color: #22d;
+    font-weight: bold;
+}
+
+.event {
+    color: #151;
+    font-weight: bold;
+}
+
+button {
+    font-weight: bold;
+    background-color: #ddd;
+    color: black;
+    border: 2pt solid #ccc;
+    border-radius: 3pt;
+    padding: 4pt;
+    width: 150pt;
+}
+
+#usersListBox {
+    position: fixed;
+    right: 20pt;
+    width: 150pt;
+    top: 20pt;
+    bottom: 220pt;
+    font-size: 13pt;
+}
+
+#chatDiv {
+    margin-right: 170pt;
+    margin-bottom: 60pt;
+}
+
+#foldButton, #checkButton, #betTextBox, #betButton {
+    position: fixed;
+    bottom: 20pt;
+    height: 30pt;
+    width: 60pt;
+}
+
+#foldButton {
+    left: 20pt;
+}
+
+#checkButton {
+    left: 90pt;
+}
+
+#betTextBox {
+    left: 160pt;
+    width: 50pt;
+}
+
+#betButton {
+    left: 220pt;
+}
+
+.privateCard {
+    border-radius: 4pt;
+    margin-right: 4pt;
+    padding: 3pt;
+    background: #000;
+}
+
+.publicCard {
+    border-radius: 4pt;
+    margin-right: 4pt;
+    padding: 3pt;
+    background: #aaa
+}
+
+#potTextBox {
+    position: fixed;
+    bottom: 200pt;
+    right: 20pt;
+    width: 150pt;
+}
+
+#shuffleButton {
+    background-color: #4d4;
+    color: #fff;
+    border: 2pt solid #3a3;
+    position: fixed;
+    bottom: 170pt;
+    right: 20pt;
+}
+
+#dealButton {
+    background-color: #44d;
+    color: #fff;
+    border: 2pt solid #33a;
+    position: fixed;
+    bottom: 140pt;
+    right: 20pt;
+}
+
+#flopButton {
+    position: fixed;
+    bottom: 110pt;
+    right: 20pt;
+}
+
+#turnButton {
+    position: fixed;
+    bottom: 80pt;
+    right: 20pt;
+}
+
+#riverButton {
+    position: fixed;
+    bottom: 50pt;
+    right: 20pt;
+}
+
+#revealButton {
+    background-color: #d44;
+    color: #fff;
+    border: 2pt solid #a33;
+    position: fixed;
+    bottom: 20pt;
+    right: 20pt;
+}
